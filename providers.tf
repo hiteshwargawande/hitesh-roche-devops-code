@@ -13,13 +13,3 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-#creating ec2 vm
-resource "aws_instance" "example" {
-    ami = "ami-0a25a306450a2cba3"
-    instance_type = "t2.nano"
-    key_name = "roche-key"
-    tags_all = {
-      "Name" = "hitesh-vm-1"
-    }
-  
-}
