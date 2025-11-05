@@ -11,7 +11,9 @@ output "hitesh-ec2ID" {
 }
 
 #storing data in local system
-resource "local_file" "my_ip_file" {
+resource "local_file" "myip_file" {
       content  = aws_instance.example.public_ip
-      filename = "public_ip.txt"
+      filename = "myip_ip.txt"
+      # making manual dependency
+      depends_on = [ aws_instance.example ]
     }
