@@ -16,7 +16,7 @@ jobs:
       run: |
         echo "Hello world"
         git version
-        whomami
+        whoami
         ls -a
 
 
