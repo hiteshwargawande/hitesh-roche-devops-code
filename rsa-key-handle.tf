@@ -7,7 +7,7 @@ resource "tls_private_key" "example" {
 
 #save my provate key
 resource "local_file" "private-key-data" {
-    content = "tls_private_key.example.private_key_pem"
+    content = tls_private_key.example.private_key_pem
     filename = "${path.module}/hitesh-key.pem"
     file_permission = 0400
   
