@@ -12,12 +12,12 @@ jobs:
   test-job:
     runs-on:ubuntu-latest
     steps: # what exactly you want to run in ubuntu machine
-       -name: my first step to run
-       run: |
-       echo "Hello world"
-       git version
-       whomami
-       ls -a
+    - name: my first step to run
+      run: |
+        echo "Hello world"
+        git version
+        whomami
+        ls -a
 
 
    
