@@ -10,7 +10,7 @@ on:
 #jobscreating jobs
 jobs:
   test-job:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps: # what exactly you want to run in ubuntu machine
     - name: my first step to run
       run: |
