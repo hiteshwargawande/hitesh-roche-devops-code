@@ -2,7 +2,7 @@ name: hitesh job
 #trigger point
 on:
   push: 
-     branches: ["dryrun-aws"]
+     branches: ["main"]
      paths-ignore:
           - "README.md"
           - "terraform.tfstate"
@@ -16,7 +16,11 @@ jobs:
     - name: taking code from repo
       uses: actions/checkout@v5
       with:
-        ref: dryrun-aws
+        ref: main
+
+       # terraform installing
+    - name: installing terraform
+      uses: hashicorp/setup-terraform@v3
 
     - name: my first step to run
       run: |
