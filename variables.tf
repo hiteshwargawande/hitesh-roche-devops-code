@@ -32,3 +32,10 @@ variable "ec2-key-name" {
  
   
 }
+variable "my-vpc-id" {
+  
+}
+
+variable "my-sec-group-name" {
+  
+}
